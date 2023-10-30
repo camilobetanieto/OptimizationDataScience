@@ -1,13 +1,8 @@
 # Optimization for Data Science
-The homework and the final project that were conducted for the Optimization for Data Science course I took during my master's degree.
-
-There were three assignments to familiarize ourselves with PySpark in the context of big data: The first two were related to MapReduce algorithms and the third focused on the Spark Streaming API. The homework statements and the initial code templates were given by the course professors during the first semester of 2023.
+The homework and the final project that were conducted as part of the Optimization for Data Science course I took during my master's degree. Both the homework and the final project tackle convex optimization problems. The homework required to solve a semi-supervised learning problem, while the final project consisted in solving the optimization problem related to soft-margin Support Vector Machines (SVM). 
 
 ## Homework 1:
-In this case, the task was to implement two MapReduce algorithms, one using the Spark partitions and the other using a partition determined by a hash function. The goal was to approximate the count of distinct triangles in an undirected graph. The triangle-counting primitive is valuable in various scenarios, including social network analysis and web spam detection. For this initial assignment, we were instructed to run the algorithms locally.
+Implementation of the Gradient Method and two Block Coordinate Gradient Descent methods (Randomized BCGD and Gauss-Southwell BCGD, both with one-dimensional blocks) to solve semi-supervised learning problems on both synthetic and real datasets. All methods used a fixed step-size, while the two BCGD methods also employed exact line search. Finally, the performance of all the methods was evaluated.
 
-## Homework 2:
-This assignment built upon the work of homework 1 as it required a performance comparison between one of the algorithms that approximated the count and a different MapReduce algorithm that provided the exact count. Additionally, in this case, we were required to run the code with larger datasets than before (the [Orkut social network data](https://snap.stanford.edu/data/com-Orkut.html) with 117 million edges), utilizing the CloudVeneto cluster, a cloud infrastructure provided by the university.
-
-## Homework 3:
-The final assignment involved using the Spark Streaming API to process a continuous stream of integer items. This was achieved by implementing a space-efficient data structure called count-sketch, which approximated the individual frequencies of the items and the second moment of the stream. This practice could be useful for gathering statistics from sources that generate large volumes of data streams, such as sensor data, the Internet of Things or online auctions.
+## Final project:
+Implementation and analysis of the Frank-Wolfe algorithm and some of its variants (the Away-steps Frank Wolfe and the Pairwise Frank-Wolfe), for training a soft-margin Support Vector Machine (SVM9 on three real datasets for classification. In this case, all methods employed the Armijo Rule to compute the step size, while the standard Frank-Wolfe also used a diminishing step-size. Lastly, the performance of all was tested and compared.
