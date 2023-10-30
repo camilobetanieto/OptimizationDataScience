@@ -1,5 +1,6 @@
 # Optimization for Data Science
 The homework and the final project that were conducted as part of the Optimization for Data Science course I took during my master's degree. 
+
 Both the homework and the final project tackle convex optimization problems. The homework required to solve a semi-supervised learning problem, while the final project consisted in solving the optimization problem related to soft-margin Support Vector Machines (SVM). 
 
 ## Homework 1:
